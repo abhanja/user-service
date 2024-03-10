@@ -23,7 +23,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-        runs-on: ubuntu-latest
         env:
           JDK_VERSION: '11'
 
