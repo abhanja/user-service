@@ -18,7 +18,7 @@
 		  <sonar.organization>abhanja</sonar.organization>
   		  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		  <sonar.login>${env.SONAR_TOKEN}</sonar.login>
-		<sonar.projectKey>user-service</sonar.projectKey>
+		  <sonar.projectKey>user-service</sonar.projectKey>
 	</properties>
 	<dependencies>
 		<dependency>
