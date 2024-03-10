@@ -28,7 +28,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          entryPoint: './mvn'  # Adjust if you're using Maven, Ant, or other build tools
+          entryPoint: 'mvn'  # Adjust if you're using Maven, Ant, or other build tools
           args: 'sonarqube'
           projectBaseDir: '.'  # Adjust if your project directory is different
         env:
