@@ -23,12 +23,12 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Maven
-        run: mvn clean install sonar:sonar
+        run: mvn clean install
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          entryPoint: './gradlew'  # Adjust if you're using Maven, Ant, or other build tools
+          entryPoint: './mvn'  # Adjust if you're using Maven, Ant, or other build tools
           args: 'sonarqube'
           projectBaseDir: '.'  # Adjust if your project directory is different
         env:
