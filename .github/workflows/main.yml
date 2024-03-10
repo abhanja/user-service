@@ -3,12 +3,10 @@ name: SonarCloud Scan
 on:
   push:
     branches:
-      - main  # change this to your main branch name
-      - develop  # you can add more branches as needed
+      - main
   pull_request:
     branches:
-      - main  # change this to your main branch name
-      - develop  # you can add more branches as needed
+      - main
 
 jobs:
   sonarcloud:
@@ -16,12 +14,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          distribution: 'adopt'
           java-version: '11'
 
       - name: Build with Maven
